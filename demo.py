@@ -45,7 +45,7 @@ class BeatBoxDemo:
 
 	def query(self):
 		print "\nquery"			
-		qr = svc.query("select Id, Name from Account")
+		qr = svc.query("select Id, Name from Contact")
 		self.dumpQueryResult(qr)
 
 	def queryAll(self):
@@ -195,22 +195,22 @@ if __name__ == "__main__":
 	else:
 		demo = BeatBoxDemo()
 		demo.login(sys.argv[1], sys.argv[2])
-		demo.getServerTimestamp()
-		demo.getUserInfo()
-		demo.resetPassword()
-		demo.describeGlobal()
-		demo.describeTabs()
-		demo.describeSObjects()
-		demo.describeLayout()
+		#demo.getServerTimestamp()
+		#demo.getUserInfo()
+		##demo.resetPassword()
+		#demo.describeGlobal()
+		#demo.describeTabs()
+		#demo.describeSObjects()
+		#demo.describeLayout()
 		demo.query()
-		demo.upsert()
-		demo.create()
-		demo.update()
-		demo.getUpdated()
-		demo.delete()
-		demo.getDeleted()
-		demo.queryAll()
-		demo.undelete()
-		demo.retrieve()
-		demo.search()
+		#demo.upsert()
+		##demo.create()
+		##demo.update()
+		##demo.getUpdated()
+		##demo.delete()
+		##demo.getDeleted()
+		##demo.queryAll()
+		##demo.undelete()
+		##demo.retrieve()
+		#demo.search()
 		
